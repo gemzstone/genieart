@@ -11,7 +11,7 @@ const Header = ({ setListImages, setIsLoading }) => {
 
     try {
       setIsLoading(true);
-      const response = await fetch("https://genieart-api-production.up.railway.app/openai/images", {
+      const response = await fetch("http://localhost:5500/openai/images", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -31,11 +31,11 @@ const Header = ({ setListImages, setIsLoading }) => {
   }
 
   return (
-    <div className="bg-gradient-to-r from-[#97D9E1] to-[#D9AFD9]">
+    <div className="bg-gradient-to-r from-[#FF7B54] to-[#D9AFD9]">
       {/* Container */}
       <div className="container mx-auto max-w-5xl px-2 py-6">
         {/* Logo */}
-        <p className="block font-bold text-xl font-opensans">Genie<span className="text-primary">ART</span></p>
+        <p className="block font-bold text-xl font-opensans">Gemzs<span className="text-primary">     Image AI</span></p>
         {/* Tagline */}
         <div className="mt-14">
           <h2 className="font-bold text-xl max-w-xs mb-1">Unleash the power of AI to create stunning images.</h2>
